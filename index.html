@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit | Session 3: Tools, Resources & Outreach Strategy — 22 May 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A4A;--blue:#417FD3;--gold:#D4A84C;--surface:#F8FAFC;--text:#1B2A4A;--muted:#64748B;--border:#E2E8F0;--white:#FFFFFF;--green:#22C55E;--red:#EF4444;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Manrope',sans-serif;background:var(--white);color:var(--text);line-height:1.75;}
+.header{background:var(--navy);padding:28px 40px 0;position:sticky;top:0;z-index:100;}
+.header-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.header h1{font-size:18px;font-weight:800;color:var(--white);}
+.header .conf{font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:2px;}
+.tabs{display:flex;gap:0;overflow-x:auto;}
+.tab{padding:12px 18px;font-size:11px;font-weight:600;color:rgba(255,255,255,0.5);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all 0.2s;}
+.tab:hover{color:rgba(255,255,255,0.8);}
+.tab.active{color:var(--gold);border-bottom-color:var(--gold);}
+.content{max-width:900px;margin:0 auto;padding:48px 40px 80px;}
+.panel{display:none;}.panel.active{display:block;}
+h2{font-size:28px;font-weight:800;margin-bottom:8px;color:var(--navy);}
+h3{font-size:18px;font-weight:700;margin-bottom:12px;color:var(--navy);}
+.dv{width:48px;height:3px;background:var(--blue);margin:16px 0 28px;}
+p{font-size:15px;line-height:1.8;max-width:720px;margin-bottom:14px;}
+.bold{font-weight:700;}
+.lb{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--blue);border:1.5px solid var(--blue);padding:6px 16px;border-radius:4px;margin-bottom:20px;}
+.grid{display:grid;gap:16px;margin-top:20px;}.g2{grid-template-columns:1fr 1fr;}
+.cd{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:24px;}
+.cn{background:var(--navy);border-color:var(--navy);color:var(--white);}
+.cb-blue{border-color:var(--blue);}
+.cl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);margin-bottom:6px;}
+.ct{font-size:16px;font-weight:700;margin-bottom:6px;}
+.cb{font-size:13px;color:var(--muted);line-height:1.7;}
+.cn .cb{color:rgba(255,255,255,0.7);}
+.dl{list-style:none;margin-top:12px;max-width:720px;}
+.dl li{padding:10px 0;font-size:14px;display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid var(--border);line-height:1.7;}
+.dl li:last-child{border-bottom:none;}
+.mk{flex-shrink:0;width:26px;height:26px;min-width:26px;border-radius:50%;background:rgba(65,127,211,0.12);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:2px;}
+.callout{background:var(--navy);color:var(--white);border-radius:10px;padding:24px;margin-top:24px;}
+.callout p{color:rgba(255,255,255,0.8);max-width:none;font-size:14px;}
+.callout-light{background:var(--surface);border-radius:10px;padding:24px;margin-top:24px;border:1px solid var(--border);}
+.callout-light p{color:var(--text);max-width:none;font-size:14px;}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--blue);color:white;font-size:13px;font-weight:700;margin-right:12px;flex-shrink:0;}
+table.data{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px;}
+table.data th{background:var(--navy);color:var(--white);padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:1px;}
+table.data td{padding:9px 12px;border-bottom:1px solid var(--border);}
+table.data tr:nth-child(even){background:var(--surface);}
+.do{color:var(--green);font-weight:700;font-size:12px;}
+.dont{color:var(--red);font-weight:700;font-size:12px;}
+.ft{position:fixed;bottom:0;left:0;right:0;padding:12px 40px;font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border-top:1px solid var(--border);z-index:100;display:flex;justify-content:space-between;}
+@media(max-width:768px){.header{padding:20px 16px 0;}.content{padding:32px 16px 60px;}h2{font-size:22px;}.g2{grid-template-columns:1fr;}.tab{padding:10px 12px;font-size:10px;}}
+</style>
+</head>
+<body>
+<div class="ft"><span>PowerFit Wellness Solutions</span><span>Internal Use Only</span></div>
+<div class="header">
+<div class="header-top">
+  <div>
+    <h1>Session 3: Tools, Resources & Outreach Strategy</h1>
+    <div style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:5px;letter-spacing:0.5px;">
+      B2B Sales Partner Session &nbsp;·&nbsp; PowerFit Wellness Solutions (Pty) Ltd &nbsp;·&nbsp; 22 May 2026 &nbsp;·&nbsp; Attendee: Daniel Mojapelo &nbsp;·&nbsp; <em style="color:rgba(255,255,255,0.3);">Nelisiwe Ndodana — absent (personal circumstances)</em>
+    </div>
+  </div>
+  <span class="conf">Internal</span>
+</div>
+<div class="tabs">
+<div class="tab active" onclick="showTab('tools')">Your Tools</div>
+<div class="tab" onclick="showTab('resources')">Resources You Get</div>
+<div class="tab" onclick="showTab('roles')">Your Role vs Mine</div>
+<div class="tab" onclick="showTab('outreach')">Outreach Strategy</div>
+<div class="tab" onclick="showTab('pipeline')">Pipeline & Monday</div>
+<div class="tab" onclick="showTab('week1')">Week 1 Actions</div>
+</div>
+</div>
+<div class="content">
+
+<div class="panel active" id="tools">
+<span class="lb">What You Work With</span>
+<h2>Your tools.</h2>
+<p>These are the tools you will use every day. You provide your own device, data, and connectivity.</p>
+<div class="dv"></div>
+<div class="grid g2">
+<div class="cd cb-blue"><div class="cl">Project Management</div><div class="ct">Monday.com</div><div class="cb">This is where you track every prospect, every conversation, every status. If it is not on Monday, it did not happen. I will walk you through this today.</div></div>
+<div class="cd cb-blue"><div class="cl">Communication</div><div class="ct">WhatsApp & Email</div><div class="cb">WhatsApp for quick check-ins between us. Email for anything to prospects. All prospect emails go from your own email address, not PowerFit's.</div></div>
+<div class="cd cb-blue"><div class="cl">Collateral</div><div class="ct">PULSE One-Pager</div><div class="cb">This is your primary leave-behind. Send it after first contact. It covers both channels (desk-based and deskless), pricing, the five pillars, and the risk engine — everything they need to understand what PULSE is. A new PULSE video is also available and can follow the one-pager if the prospect wants to go deeper.</div></div>
+<div class="cd cb-blue"><div class="cl">Website</div><div class="ct">powerfitwellness.co.za</div><div class="cb">The website is currently being upgraded to cater for deskless workers — a full rebuild is underway. Do not direct prospects to it for now. Use the one-pager instead. The site will be active again once the new version is live.</div></div>
+<div class="cd cb-blue"><div class="cl">Meetings</div><div class="ct">Zoom or Microsoft Teams</div><div class="cb">All prospect meetings are virtual unless the prospect requests in-person. Use whichever platform the prospect prefers.</div></div>
+<div class="cd cb-blue"><div class="cl">LinkedIn</div><div class="ct">Your Personal Profile</div><div class="cb">Use your own LinkedIn to connect with HR decision-makers. No pitch in the connection request. Just connect. Build the network.</div></div>
+</div>
+<div class="callout-light"><p class="bold" style="color:var(--navy);">Important: You provide your own equipment.</p><p>Per your contract (Section 4.9), you are responsible for your own laptop, phone, data, and connectivity. PowerFit does not provide equipment. If funding is secured, we may reimburse reasonable expenses by addendum (Section 5.6).</p></div>
+</div>
+
+<div class="panel" id="resources">
+<span class="lb">What PowerFit Gives You</span>
+<h2>Resources from the company.</h2>
+<p>These are the things I provide to you. You do not need to create any of these yourself.</p>
+<div class="dv"></div>
+<ul class="dl">
+<li><span class="mk">1</span><span><strong>PULSE One-Pager</strong> — This is your primary piece of collateral. Send it to every prospect after first contact. It covers both channels (desk-based and deskless), the five pillars, the risk engine, and pricing. Everything they need on one page.</span></li>
+<li><span class="mk">2</span><span><strong>PULSE Explainer Video</strong> — A new video is now available. Use it as a follow-up after the one-pager, if the prospect engages and wants to go deeper. Do not send both at once.</span></li>
+<li><span class="mk">3</span><span><strong>Prospect List</strong> — 27+ companies identified with 13 confirmed HR decision-maker contacts. You will get access to this on Monday.com.</span></li>
+<li><span class="mk">4</span><span><strong>Service Agreement</strong> — When a prospect is ready to sign, the contract is ready. You do not draft contracts. I handle that.</span></li>
+<li><span class="mk">5</span><span><strong>Monday.com Access</strong> — Your login to the project management board where you track everything.</span></li>
+<li><span class="mk">6</span><span><strong>Coaching & Support</strong> — Team sessions are available. The initial onboarding session is required. After that, attendance is at your discretion.</span></li>
+<li><span class="mk">7</span><span><strong>KPI Framework</strong> — Within 30 days I will provide a written KPI framework. This is how we measure progress. Reviewed quarterly.</span></li>
+</ul>
+<div class="callout"><p class="bold">What you do NOT get:</p><p>A salary (Phase 1 is commission only). Equipment. A company email address. An office. These come later when the business can support them. Right now, we are building from zero. You earn what you close.</p></div>
+</div>
+
+<div class="panel" id="roles">
+<span class="lb">Who Does What</span>
+<h2>Your role vs my role.</h2>
+<p>This needs to be crystal clear so we do not step on each other.</p>
+<div class="dv"></div>
+<table class="data">
+<tr><th>Activity</th><th>You (Daniel)</th><th>Me (Tshepiso)</th></tr>
+<tr><td>Finding prospects</td><td><span class="do">YOU</span></td><td>I give you the initial list</td></tr>
+<tr><td>First contact / cold outreach</td><td><span class="do">YOU</span></td><td>I provide the email template</td></tr>
+<tr><td>Follow-ups</td><td><span class="do">YOU</span></td><td>—</td></tr>
+<tr><td>Sending the video</td><td><span class="do">YOU</span></td><td>I provide the video link</td></tr>
+<tr><td>Booking the meeting</td><td><span class="do">YOU</span></td><td>—</td></tr>
+<tr><td>Leading the prospect meeting</td><td><span class="do">YOU</span></td><td>I attend first 5 as founder presence</td></tr>
+<tr><td>Product walkthrough</td><td><span class="do">YOU</span></td><td>I support if needed</td></tr>
+<tr><td>Handling objections</td><td><span class="do">YOU</span></td><td>We prep responses together</td></tr>
+<tr><td>Closing the deal</td><td><span class="do">YOU lead</span></td><td>I provide founder endorsement (first 5)</td></tr>
+<tr><td>Contract & invoicing</td><td>—</td><td><span class="do">ME</span></td></tr>
+<tr><td>Product delivery</td><td>—</td><td><span class="do">ME</span></td></tr>
+<tr><td>Content production</td><td>—</td><td><span class="do">ME</span></td></tr>
+<tr><td>Client onboarding</td><td>—</td><td><span class="do">ME</span></td></tr>
+<tr><td>Power Pulse Report</td><td>—</td><td><span class="do">ME</span></td></tr>
+<tr><td>Updating Monday.com</td><td><span class="do">YOU</span></td><td>I review it</td></tr>
+<tr><td>Pricing changes or promises</td><td><span class="dont">NEVER</span></td><td><span class="do">ME only</span></td></tr>
+</table>
+<div class="callout-light"><p class="bold" style="color:var(--navy);">The simple version:</p><p>You open the door. You build the relationship. You close the deal. I handle everything after the signature. If you are ever unsure about what to say or promise, ask me first.</p></div>
+</div>
+
+<div class="panel" id="outreach">
+<span class="lb">How We Sell PULSE</span>
+<h2>Outreach strategy.</h2>
+<p>Every prospect goes through these steps. No shortcuts.</p>
+<div class="dv"></div>
+<div style="margin-top:20px;">
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">1</span><div><h3 style="margin-bottom:4px;">Identify the right person</h3><p style="font-size:14px;">The decision-maker is always HR. Head of HR, HR Director, Chief People Officer, People & Culture Lead. Not the CEO. Not the receptionist. Find the HR person's name and email.</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">2</span><div><h3 style="margin-bottom:4px;">Send the cold email</h3><p style="font-size:14px;">Subject line: "Reaching the Employees Who Never Raise Their Hand." The email is short and deliberately vague. It does not explain the product. It makes them curious enough to look at the one-pager. I will give you the template.</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">3</span><div><h3 style="margin-bottom:4px;">They receive the one-pager</h3><p style="font-size:14px;">The PULSE one-pager is the primary piece. It shows them both channels (desk and deskless), the five pillars, the risk engine, and pricing. If they engage and want more, follow with the new PULSE video. Do not send both at once — one-pager first, video if they respond.</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">4</span><div><h3 style="margin-bottom:4px;">Follow up</h3><p style="font-size:14px;">If no response after 5 business days, follow up once. Short. "Hi [name], just checking if you had a chance to look at the document I sent. Happy to answer any questions." If still no response after another 5 days, move on.</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">5</span><div><h3 style="margin-bottom:4px;">Book the meeting</h3><p style="font-size:14px;">If they respond, book a 30-minute virtual meeting. Walk them through PULSE, answer questions, and understand their situation. Ask: "What does wellness look like at your company right now?"</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">6</span><div><h3 style="margin-bottom:4px;">The closing meeting</h3><p style="font-size:14px;">When they are ready, book the closing meeting. For the first 5 clients, I join this meeting. You lead. I provide founder-level endorsement. After 5 clients, you close on your own.</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:24px;"><span class="step-num">7</span><div><h3 style="margin-bottom:4px;">Contract and payment</h3><p style="font-size:14px;">I send the service agreement. The client signs. The client pays (Net 30). When payment clears, your commission is paid within 7 days. You then become the relationship holder. I handle delivery.</p></div></div>
+</div>
+<div class="callout"><p class="bold">The golden rule:</p><p>Do not sell the product. Sell the problem. The HR person does not care about PULSE. They care about the employees they cannot see. Start with their pain, not our product.</p></div>
+</div>
+
+<div class="panel" id="pipeline">
+<span class="lb">Monday.com</span>
+<h2>Pipeline management.</h2>
+<p>Every prospect lives on Monday.com. Here is the structure.</p>
+<div class="dv"></div>
+<table class="data">
+<tr><th>Stage</th><th>What It Means</th><th>What You Do</th></tr>
+<tr><td>New Lead</td><td>Company and contact identified</td><td>Add to Monday with company name, contact, email, source</td></tr>
+<tr><td>Contacted</td><td>Cold email sent</td><td>Update the date</td></tr>
+<tr><td>Video Sent</td><td>They responded, you sent the video</td><td>Update status, note any response</td></tr>
+<tr><td>Meeting Booked</td><td>They agreed to meet</td><td>Add meeting date. Tell me.</td></tr>
+<tr><td>Meeting Done</td><td>Meeting happened</td><td>Add notes: what they said, objections, next steps</td></tr>
+<tr><td>Proposal Sent</td><td>They want pricing</td><td>Tell me. I send the proposal.</td></tr>
+<tr><td>Close-Ready</td><td>Ready to sign</td><td>Book closing meeting. Tell me to join (first 5).</td></tr>
+<tr><td>Won</td><td>Signed and paid</td><td>Commission incoming.</td></tr>
+<tr><td>Lost</td><td>They said no</td><td>Note why. We learn from every no.</td></tr>
+</table>
+<div class="callout-light"><p class="bold" style="color:var(--navy);">Attribution rule (Section 8.4):</p><p>Monday.com is the record. If a prospect is not on Monday under your name, it is not your lead. First to log it, owns it. Keep your board clean and updated.</p></div>
+</div>
+
+<div class="panel" id="week1">
+<span class="lb">Getting Started</span>
+<h2>Your first week.</h2>
+<p>This is what you do in the next 7 days.</p>
+<div class="dv"></div>
+<div class="grid" style="grid-template-columns:1fr;">
+<div class="cd" style="display:flex;align-items:flex-start;gap:16px;"><span class="step-num">1</span><div><div class="ct">Log into Monday.com</div><div class="cb">I will send you the login. Explore the board. Understand the stages. Add any prospects you already know.</div></div></div>
+<div class="cd" style="display:flex;align-items:flex-start;gap:16px;"><span class="step-num">2</span><div><div class="ct">Read the one-pager twice. Watch the video twice.</div><div class="cb">Know both inside out. The one-pager goes first. The video follows if they engage. If a prospect asks you a question, you need to answer confidently without having to check.</div></div></div>
+<div class="cd" style="display:flex;align-items:flex-start;gap:16px;"><span class="step-num">3</span><div><div class="ct">Review the prospect list</div><div class="cb">Go through the companies on Monday. Pick 10 to start with. Research each one: how many employees, who is HR, do they have a wellness programme?</div></div></div>
+<div class="cd" style="display:flex;align-items:flex-start;gap:16px;"><span class="step-num">4</span><div><div class="ct">Send 5 cold emails</div><div class="cb">Using the template I give you. Five emails. Five companies. Update Monday for each one.</div></div></div>
+<div class="cd" style="display:flex;align-items:flex-start;gap:16px;"><span class="step-num">5</span><div><div class="ct">Connect with 10 HR people on LinkedIn</div><div class="cb">No pitch. No product link. Just connect. Build the network.</div></div></div>
+</div>
+<div class="callout" style="margin-top:24px;"><p class="bold">The target:</p><p>10 outreach emails per week. Every week. Consistency builds a pipeline. Not bursts of energy followed by silence. 10 per week. Update Monday. Follow up. Repeat.</p></div>
+<div class="callout-light" style="margin-top:16px;"><p class="bold" style="color:var(--navy);">Your compensation</p><p>Phase 1 is commission only. For every client you close: R14,400 upfront (paid within 7 days of cleared funds) plus R2,880 per month recurring from Month 2. Close 5 clients and you earn R14,400/month in recurring alone, plus R72,000 in upfront commissions. The maths works. But only if you do the work.</p></div>
+</div>
+
+</div>
+<script>
+function showTab(id){
+document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+event.target.classList.add('active');
+window.scrollTo({top:document.querySelector('.content').offsetTop,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
